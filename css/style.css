@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root {
+    --div-background-color: #100F0F;
+    --text-color: #FEFBF6;
+    --powder-color: #B6D0E2;
+    /*========== Font name ==========*/
+    --font-style: "Poppins", sans-serif;
+    /*========== Font Size ==========*/
+    /* .8rem = 12.8px, 1rem = 16px, 1.5rem = 24px ... */
+    --h5-font-size: 0.7rem;
+    --h4-font-size: 0.9rem;
+    --h3-font-size: 1.5rem;
+    --h2-font-size: 2rem;
+    --h1-font-size: 2.3rem;
+    /*========== Font weight ==========*/
+    --font-low: 200;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /*========== Padding and Margins ==========*/
+    --low-padding: .8rem;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: var(--font-style);
+    letter-spacing: 1px;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 5s ease;
+}
+
+body {
+    /* background-color: var(--div-background-color); */
+}
+
+
+/* =============for navbar============ */
+
+.navbar {
+    right: 5%;
+    top: 15%;
+    background-color: var(--text-color);
+    position: fixed;
+    border-radius: 0 0 5px 5px;
+    opacity: 95%;
+    z-index: 999;
+    opacity: 0;
+    transition: .8s;
+}
+
+.navbar.visible {
+    opacity: 1;
+}
+
+.navUl {
+    list-style-type: none;
+    width: 120px;
+    min-height: 250px;
+    display: block;
+}
+
+.navList {
+    padding: 14%;
+    text-align: center;
+}
+
+.navLinks {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: var(--h4-font-size);
+}
+
+
+/* ========Headnings, SubHeadings, hr======== */
+
+.mainHead,
+.subHead,
+.straightLine {
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    font-size: var(--h1-font-size);
+}
+
+.subHead {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-low);
+}
+
+.straightLine {
+    border-color: #727878;
+    opacity: 0.2;
+}
+
+
+/* ==============Landing page=============== */
+
+#landingPage img {
+    width: 100%;
+    max-height: 850px;
+    background-color: transparent;
+    /* background-image: url('bg.jpg'); */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* footer */
+
+#footer {
+    background-color: var(--div-background-color);
+    padding: 0;
+    margin: 0;
+}
+
+.footerDiv {
+    width: 70%;
+    margin-left: 14.25%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footicon {
+    text-decoration: none;
+    padding: .3rem;
+    margin: var(--low-padding) 1% 0 1%;
+    font-size: var(--h4-font-size);
+    border-radius: 50px;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    cursor: pointer;
+}
+
+.footlist {
+    display: inline-block;
+    padding: 0 var(--low-padding);
+}
+
+.footlist a {
+    text-decoration: none;
+    font-size: var(--h4-font-size);
+    color: var(--text-color);
+}
+
+.copy {
+    font-size: var(--h5-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    padding: 0 0 var(--low-padding) 0;
+}
+
+
+/* ===============Scroll UP==================== */
+
+.scroll-up {
+    text-decoration: none;
+    padding: .3rem;
+    margin: var(--low-padding) 1% 0 1%;
+    font-size: var(--h4-font-size);
+    border-radius: 50px;
+    color: var(--powder-color);
+    border: 2px solid var(--powder-color);
+    cursor: pointer;
+    transition: all .4s;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.scroll-up.active {
+    pointer-events: auto;
+    opacity: 1;
+}
