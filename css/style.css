@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 :root {
     --div-background-color: #100F0F;
     --text-color: #FEFBF6;
     --powder-color: #B6D0E2;
+    --para-color: #727878;
+    --btn-color: #8BBCCC;
     /*========== Font name ==========*/
     --font-style: "Poppins", sans-serif;
+    --font-style-oz: 'Oswald', sans-serif;
     /*========== Font Size ==========*/
     /* .8rem = 12.8px, 1rem = 16px, 1.5rem = 24px ... */
     --h5-font-size: 0.7rem;
@@ -17,7 +22,9 @@
     --font-medium: 500;
     --font-semi-bold: 600;
     /*========== Padding and Margins ==========*/
-    --low-padding: .8rem;
+    --margin-low: .8rem;
+    --margin-mid: 2.5rem;
+    --margin-high: 5rem;
 }
 
 * {
@@ -42,7 +49,7 @@ body {
 .navbar {
     right: 5%;
     top: 15%;
-    background-color: var(--text-color);
+    background-color: var(--powder-color);
     position: fixed;
     border-radius: 0 0 5px 5px;
     opacity: 95%;
@@ -79,6 +86,7 @@ body {
 .mainHead,
 .subHead,
 .straightLine {
+    margin-top: var(--margin-mid);
     width: 70%;
     margin-left: 15%;
     text-align: center;
@@ -86,8 +94,11 @@ body {
 }
 
 .subHead {
+    --margin-low: .9rem;
+    margin-top: var(--margin-low);
     font-size: var(--h3-font-size);
     font-weight: var(--font-low);
+    color: var(--powder-color);
 }
 
 .straightLine {
@@ -98,19 +109,98 @@ body {
 
 /* ==============Landing page=============== */
 
-#landingPage img {
+#landingPage {
     width: 100%;
-    max-height: 850px;
-    background-color: transparent;
-    /* background-image: url('bg.jpg'); */
+    height: 700px;
+    background-image: url("back.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.landDiv {
+    position: absolute;
+    width: 50%;
+    margin-left: 25%;
+    justify-content: center;
+    margin-top: 20%;
+}
 
-/* footer */
+.landHead {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: var(--font-medium);
+    font-style: var(--font-style-oz);
+    color: var(--powder-color);
+}
+
+
+/* ==========First Page============ */
+
+#firstPage {
+    min-height: 750px;
+    padding-bottom: var(--margin-low);
+}
+
+.profileDiv {
+    display: block;
+    width: 72%;
+    margin-top: var(--margin-low);
+    margin-left: 14%;
+}
+
+.proDiv1,
+.proDiv2,
+.proDiv3 {
+    width: 31.333%;
+    float: left;
+    min-height: 430px;
+    padding: 1%;
+}
+
+.proH2 {
+    font-weight: var(--font-medium);
+}
+
+.proPara {
+    margin-top: var(--margin-low);
+    text-align: left;
+    color: var(--para-color);
+}
+
+.proImg {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: var(--margin-mid);
+}
+
+.proBtn {
+    padding: 1.2% 3%;
+    margin-top: var(--margin-mid);
+    margin-right: var(--margin-low);
+    --btn-color: #0072b1;
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.proBtn:hover {
+    background-color: var(--powder-color);
+}
+
+.profilePara {
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10rem;
+    display: block;
+    margin-top: var(--margin-mid);
+}
+
+
+/* ===============footer============== */
 
 #footer {
     background-color: var(--div-background-color);
@@ -128,7 +218,7 @@ body {
 .footicon {
     text-decoration: none;
     padding: .3rem;
-    margin: var(--low-padding) 1% 0 1%;
+    margin: var(--margin-low) 1% 0 1%;
     font-size: var(--h4-font-size);
     border-radius: 50px;
     color: var(--text-color);
@@ -138,7 +228,7 @@ body {
 
 .footlist {
     display: inline-block;
-    padding: 0 var(--low-padding);
+    padding: 0 var(--margin-low);
 }
 
 .footlist a {
@@ -151,7 +241,7 @@ body {
     font-size: var(--h5-font-size);
     color: var(--text-color);
     font-weight: var(--font-medium);
-    padding: 0 0 var(--low-padding) 0;
+    padding: 0 0 var(--margin-low) 0;
 }
 
 
@@ -160,7 +250,7 @@ body {
 .scroll-up {
     text-decoration: none;
     padding: .3rem;
-    margin: var(--low-padding) 1% 0 1%;
+    margin: var(--margin-low) 1% 0 1%;
     font-size: var(--h4-font-size);
     border-radius: 50px;
     color: var(--powder-color);
