@@ -112,7 +112,7 @@ body {
 
 #landingPage {
     width: 100%;
-    height: 635px;
+    height: 100vh;
     background-image: url("back.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -125,7 +125,7 @@ body {
     width: 50%;
     margin-left: 25%;
     justify-content: center;
-    margin-top: 15rem;
+    margin-top: 20%;
 }
 
 .landHead {
@@ -141,7 +141,7 @@ body {
     width: 120px;
     height: 90px;
     margin-left: 86.25%;
-    top: 34.1rem;
+    top: 86%;
     text-align: center;
 }
 
@@ -306,7 +306,7 @@ body {
     transition: all .4s;
     position: fixed;
     right: 1rem;
-    bottom: 1rem;
+    bottom: 1.5rem;
     opacity: 0;
     pointer-events: none;
     transition: 0.4s;
