@@ -25,7 +25,7 @@ const nav = document.querySelector(".navbar");
 window.addEventListener("scroll", navUp);
 
 function navUp() {
-    if (window.pageYOffset > 750) {
+    if (window.pageYOffset > 535) {
         nav.classList.add("visible");
     } else {
         nav.classList.remove("visible");

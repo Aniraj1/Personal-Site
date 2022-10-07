@@ -10,6 +10,7 @@
     /*========== Font name ==========*/
     --font-style: "Poppins", sans-serif;
     --font-style-oz: 'Oswald', sans-serif;
+    --font-style-cursive: 'Courgette', cursive;
     /*========== Font Size ==========*/
     /* .8rem = 12.8px, 1rem = 16px, 1.5rem = 24px ... */
     --h5-font-size: 0.7rem;
@@ -49,13 +50,13 @@ body {
 .navbar {
     right: 5%;
     top: 15%;
-    background-color: var(--powder-color);
+    background-color: var(--para-color);
     position: fixed;
     border-radius: 0 0 5px 5px;
     opacity: 95%;
     z-index: 999;
     opacity: 0;
-    transition: .8s;
+    transition: .4s;
 }
 
 .navbar.visible {
@@ -111,7 +112,7 @@ body {
 
 #landingPage {
     width: 100%;
-    height: 700px;
+    height: 635px;
     background-image: url("back.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -131,8 +132,54 @@ body {
     font-size: 5rem;
     text-align: center;
     font-weight: var(--font-medium);
-    font-style: var(--font-style-oz);
-    color: var(--powder-color);
+    font-family: var(--font-style-cursive);
+    color: var(--para-color);
+}
+
+.boxDiv {
+    position: absolute;
+    width: 120px;
+    height: 90px;
+    margin-left: 86.25%;
+    top: 85.85%;
+    text-align: center;
+}
+
+.box {
+    display: block;
+    margin-left: ;
+    width: 120px;
+    height: 90px;
+    background-color: var(--para-color);
+}
+
+.box a {
+    text-decoration: none;
+    --margin-low: .2rem;
+    padding: var(--margin-low);
+    color: var(--text-color);
+    font-size: var(--h1-font-size);
+    animation: up-down linear 4s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translate(1px, 20px);
+    }
+    24% {
+        transform: translate(1px, 30px);
+    }
+    50% {
+        transform: translate(1px, 12px);
+    }
+    74% {
+        transform: translate(1px, 22px);
+    }
+    100% {
+        transform: translate(1px, 22px);
+    }
 }
 
 
